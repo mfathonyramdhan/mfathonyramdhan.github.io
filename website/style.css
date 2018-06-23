@@ -1,0 +1,73 @@
+@font-face{
+    font-family: alisandra;
+    src: url(font/Alisandra\ Demo.ttf);
+}
+@font-face{
+    font-family: cocogoose;
+    src: url(font/Cocogoose\ Pro\ Regular\ Trial.ttf);
+}
+.ali{
+    font-family: alisandra;
+}
+.coco{
+    font-family: cocogoose;
+}
+html{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+body{
+    margin-bottom: 150px;
+    margin-top: 50px;
+}   
+.sekolah2{
+    margin-top: 20px;
+}
+.kuning{
+    color: yellowgreen;
+}
+span{
+    color: red;
+}
+body #some{
+    background-color: #eee;
+    margin-top: 80px;
+}
+#red{
+    margin-top: 10px;
+    color: red;
+}
+.img-thumbnail:hover{
+    border: 1px solid blue;
+}
+.col-sm-6 a{
+    text-decoration: none;
+    color: black;
+    -webkit-transition: color 0.5s;
+}
+.col-sm-6 a:hover{
+    text-decoration: none;
+    color: blue;
+    -webkit-transition: color 0.5s;
+}
+footer{
+    position: absolute;
+    width: 100%;
+    height: 180px;
+    bottom: 0;
+    background-color: #333;
+}
+#post{
+    min-height: 700px;
+}
+#some{
+    min-height: 700px;
+}
+footer p{
+    color: white;
+    margin-top: 10px;
+}
+.nav-item a{
+    color: white;
+}
