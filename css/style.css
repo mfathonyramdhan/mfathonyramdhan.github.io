@@ -15,6 +15,80 @@ body {
   font-size: 14px;
 }
 
+
+.kartu, .front-face, .back-face {
+  position: absolute;
+}
+
+.kartu {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 252px;
+  width: 400px;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.kartu .front-face,
+.kartu .back-face {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: url('front-face-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  transition: transform .7s cubic-bezier(.4, .2, .2, 1);
+}
+
+.kartu .back-face {
+  transform: rotateY(180deg);
+  background: url('back-face-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.kartu .back-face h2 {
+  margin-top: 40%;
+  color: #ffffff;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+.kartu .back-face p {
+  margin-top: 6px;
+  color: #dddddd;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.kartu .back-face .icons {
+  margin-top: 30px;
+}
+
+.kartu .back-face .icons i {
+  cursor: pointer;
+  color: #d74039;
+  background: #ffffff;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.kartu:hover > .back-face {
+  transform: rotateY(0deg);
+}
+
+.kartu:hover > .front-face {
+  transform: rotateY(-180deg);
+}
+
 /* line 9, /Applications/MAMP/htdocs/palash/cl/july 2019/192 Agency/192 Agency html/sass/_common.scss */
 .message_submit_form:focus {
   outline: none;
@@ -6148,7 +6222,7 @@ h6 {
 .breadcrumb {
   position: relative;
   z-index: 1;
-  height: 450px;
+  height: 700px;
 }
 
 /* line 9, /Applications/MAMP/htdocs/palash/cl/july 2019/192 Agency/192 Agency html/sass/_breadcrumb.scss */
